@@ -1,0 +1,69 @@
+/* Styles for ReadingLogPage */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding-left: 1rem;  /* Tailwind's px-4 equals 1rem padding left & right */
+  padding-right: 1rem;
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  color: #333;
+  background-image: url('/subtle-book-backdrop.png');
+  background-size: cover;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Match container width */
+}
+
+.readingLogContainer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #BBF7D0; /* Light green background */
+  border: 2px solid #66ffb3; /* Bright green border */
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.logItem {
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  /* display: flex; align-items: center; gap: 1rem; */ /* Added via className in component */
+}
+
+.logItem:last-child {
+  border-bottom: none;
+}
+
+.utilityButton {
+  padding: 0.5rem; /* Tailwind's p-2 is 0.5rem */
+  background-color: #fc5e56; /* Tailwind's bg-red-500 */
+  color: white;
+  border: none;
+  border-radius: 0.25rem; /* Tailwind's rounded */
+  cursor: pointer;
+  font-size: 1rem; /* Optional: align with typical Tailwind base font size */
+}
+
+.utilityButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #dc3545; /* Bootstrap danger color */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Add any other specific styles needed */

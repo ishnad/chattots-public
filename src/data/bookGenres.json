@@ -1,0 +1,279 @@
+[
+  {
+    "value": "Action",
+    "synonyms": [
+      "action",
+      "fast-paced",
+      "exciting",
+      "chase",
+      "explosive",
+      "fight",
+      "fights",
+      "fighting"
+    ],
+    "emoji": "💥"
+  },
+  {
+    "value": "Activity Books",
+    "synonyms": [
+      "Activity Books"
+    ],
+    "emoji": "✏️"
+  },
+  {
+    "value": "Adventure",
+    "synonyms": [
+      "action stories",
+      "quest stories"
+    ],
+    "emoji": "🧭"
+  },
+  {
+    "value": "Animal",
+    "synonyms": [
+      "animal",
+      "animal stories",
+      "pet",
+      "pet stories",
+      "wildlife",
+      "animal adventures"
+    ],
+    "emoji": "🐾"
+  },
+  {
+    "value": "Animal Non-Fiction",
+    "synonyms": [
+      "Animal Non-Fiction"
+    ],
+    "emoji": "🐘"
+  },
+  {
+    "value": "Animal Stories",
+    "synonyms": [
+      "Animal Stories"
+    ],
+    "emoji": "🐶"
+  },
+  {
+    "value": "Bedtime Stories",
+    "synonyms": [
+      "Bedtime Stories"
+    ],
+    "emoji": "🌙"
+  },
+  {
+    "value": "Biography",
+    "synonyms": [
+      "memoir",
+      "autobiography"
+    ],
+    "emoji": "👤"
+  },
+  {
+    "value": "Children's Fiction",
+    "synonyms": [
+      "kids books",
+      "picture books"
+    ],
+    "emoji": "🧒"
+  },
+  {
+    "value": "Comedy",
+    "synonyms": [
+      "humor",
+      "funny stories"
+    ],
+    "emoji": "😂"
+  },
+  {
+    "value": "Contemporary Fiction",
+    "synonyms": [
+      "modern fiction"
+    ],
+    "emoji": "🏙️"
+  },
+  {
+    "value": "Diaries/Journals",
+    "synonyms": [
+      "Diaries/Journals"
+    ],
+    "emoji": "📓"
+  },
+  {
+    "value": "Early Readers",
+    "synonyms": [
+      "Early Readers"
+    ],
+    "emoji": "📘"
+  },
+  {
+    "value": "Educational",
+    "synonyms": [
+      "educational",
+      "learn",
+      "learning",
+      "facts",
+      "real stories"
+    ],
+    "emoji": "📚"
+  },
+  {
+    "value": "Fairy Tale",
+    "synonyms": [
+      "fairy tale",
+      "fable",
+      "legend",
+      "folklore",
+      "princess story",
+      "princess stories",
+      "classic tales",
+      "classic tale"
+    ],
+    "emoji": "🧚"
+  },
+  {
+    "value": "Fantasy",
+    "synonyms": [
+      "epic fantasy",
+      "urban fantasy",
+      "high fantasy"
+    ],
+    "emoji": "🐉"
+  },
+  {
+    "value": "Folk Tales",
+    "synonyms": [
+      "Folk Tales"
+    ],
+    "emoji": "🪆"
+  },
+  {
+    "value": "Graphic Novel",
+    "synonyms": [
+      "comics",
+      "manga"
+    ],
+    "emoji": "📖"
+  },
+  {
+    "value": "Historical Fiction",
+    "synonyms": [
+      "period fiction"
+    ],
+    "emoji": "🏰"
+  },
+  {
+    "value": "Horror",
+    "synonyms": [
+      "scary stories",
+      "supernatural horror"
+    ],
+    "emoji": "👻"
+  },
+  {
+    "value": "Humor",
+    "synonyms": [
+      "Humor"
+    ],
+    "emoji": "🤣"
+  },
+  {
+    "value": "Legends",
+    "synonyms": [
+      "Legends"
+    ],
+    "emoji": "🗺️"
+  },
+  {
+    "value": "Mystery",
+    "synonyms": [
+      "detective",
+      "whodunit",
+      "crime fiction"
+    ],
+    "emoji": "🕵️‍♂️"
+  },
+  {
+    "value": "Mythology",
+    "synonyms": [
+      "Mythology"
+    ],
+    "emoji": "⚡"
+  },
+  {
+    "value": "Non-Fiction",
+    "synonyms": [
+      "factual books",
+      "informational text"
+    ],
+    "emoji": "📰"
+  },
+  {
+    "value": "Poetry",
+    "synonyms": [
+      "Poetry"
+    ],
+    "emoji": "📝"
+  },
+  {
+    "value": "Realistic Fiction",
+    "synonyms": [
+      "Realistic Fiction"
+    ],
+    "emoji": "🧍"
+  },
+  {
+    "value": "Romance",
+    "synonyms": [
+      "love stories",
+      "romantic fiction"
+    ],
+    "emoji": "💖"
+  },
+  {
+    "value": "Science fiction",
+    "synonyms": [
+      "sci-fi",
+      "scifi",
+      "SF"
+    ],
+    "emoji": "👽"
+  },
+  {
+    "value": "Space",
+    "synonyms": [
+      "Space"
+    ],
+    "emoji": "🚀"
+  },
+  {
+    "value": "Sports Fiction",
+    "synonyms": [
+      "Sports Fiction"
+    ],
+    "emoji": "🏅"
+  },
+  {
+    "value": "Survival Stories",
+    "synonyms": [
+      "Survival Stories"
+    ],
+    "emoji": "🧗"
+  },
+  {
+    "value": "Thriller",
+    "synonyms": [
+      "suspense",
+      "psychological thriller"
+    ],
+    "emoji": "🔪"
+  },
+  {
+    "value": "Young Adult",
+    "synonyms": [
+      "YA",
+      "teen fiction"
+    ],
+    "emoji": "📙"
+  }
+]

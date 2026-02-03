@@ -1,0 +1,217 @@
+[
+  {
+    "value": "Cartoon",
+    "synonyms": [
+      "cartoon",
+      "animation",
+      "kids show"
+    ],
+    "emoji": "📺"
+  },
+  {
+    "value": "Adventure",
+    "synonyms": [
+      "adventure",
+      "action",
+      "exciting",
+      "thrilling"
+    ],
+    "emoji": "🏞️"
+  },
+  {
+    "value": "Comedy",
+    "synonyms": [
+      "comedy",
+      "funny",
+      "joke",
+      "hilarious",
+      "silly",
+      "laugh"
+    ],
+    "emoji": "😂"
+  },
+  {
+    "value": "Superhero",
+    "synonyms": [
+      "superhero",
+      "hero",
+      "power",
+      "marvel",
+      "DC"
+    ],
+    "emoji": "🦸"
+  },
+  {
+    "value": "Fantasy",
+    "synonyms": [
+      "fantasy",
+      "magic",
+      "fairy tale",
+      "princess",
+      "mythical",
+      "mystical"
+    ],
+    "emoji": "🧙"
+  },
+  {
+    "value": "Animal",
+    "synonyms": [
+      "animal",
+      "wildlife",
+      "nature",
+      "zoo",
+      "pets",
+      "animals"
+    ],
+    "emoji": "🐾"
+  },
+  {
+    "value": "Bedtime",
+    "synonyms": [
+      "bedtime",
+      "relaxing",
+      "calming",
+      "sleepy",
+      "night",
+      "night time"
+    ],
+    "emoji": "🌙"
+  },
+  {
+    "value": "Space",
+    "synonyms": [
+      "space",
+      "planet",
+      "astronomy",
+      "NASA",
+      "universe"
+    ],
+    "emoji": "🚀"
+  },
+  {
+    "value": "History",
+    "synonyms": [
+      "history",
+      "ancient",
+      "past",
+      "time travel"
+    ],
+    "emoji": "🏛️"
+  },
+  {
+    "value": "Music",
+    "synonyms": [
+      "music",
+      "song",
+      "songs",
+      "sing along",
+      "nursery rhymes",
+      "rhymes",
+      "choreography",
+      "music video"
+    ],
+    "emoji": "🎵"
+  },
+  {
+    "value": "Sports",
+    "synonyms": [
+      "sports",
+      "footbal",
+      "soccer",
+      "basketball"
+    ],
+    "emoji": "🏀"
+  },
+  {
+    "value": "Educational",
+    "synonyms": [
+      "educational",
+      "learning",
+      "school",
+      "science",
+      "facts",
+      "experiments",
+      "STEM",
+      "robots",
+      "technology",
+      "teach"
+    ],
+    "emoji": "📚"
+  },
+  {
+    "value": "Cars",
+    "synonyms": [
+      "cars",
+      "trucks",
+      "vehicles",
+      "race",
+      "racing",
+      "transportation"
+    ],
+    "emoji": "🚗"
+  },
+  {
+    "value": "Friendship",
+    "synonyms": [
+      "friendship",
+      "kindness",
+      "moral",
+      "moral story",
+      "life lesson"
+    ],
+    "emoji": "🤝"
+  },
+  {
+    "value": "Food",
+    "synonyms": [
+      "food",
+      "cooking",
+      "recipe",
+      "kids cooking"
+    ],
+    "emoji": "🍽️"
+  },
+  {
+    "value": "Holiday",
+    "synonyms": [
+      "holiday",
+      "christmas",
+      "easter",
+      "halloween",
+      "chinese new year"
+    ],
+    "emoji": "🎉"
+  },
+  {
+    "value": "Dinosaur",
+    "synonyms": [
+      "dinosaurs",
+      "prehistoric",
+      "jurassic",
+      "fossil"
+    ],
+    "emoji": "🦖"
+  },
+  {
+    "value": "Ocean",
+    "synonyms": [
+      "ocean",
+      "sea animals",
+      "mermaids",
+      "underwater"
+    ],
+    "emoji": "🌊"
+  },
+  {
+    "value": "Mystery",
+    "synonyms": [
+      "mystery",
+      "detective",
+      "crime",
+      "secret",
+      "clues",
+      "investigation"
+    ],
+    "emoji": "🕵️"
+  }
+]

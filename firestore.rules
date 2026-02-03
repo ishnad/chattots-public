@@ -1,0 +1,77 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Allow admin to manage book genres
+    match /bookGenres/{genreId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+
+    // Allow admin to manage content genres
+    match /contentGenres/{genreId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+
+    // Allow users to create and update their own profile document
+    match /users/{userId} {
+      allow read, create, update: if request.auth != null && request.auth.uid == userId;
+      // Allow admins to read any user document (needed for admin panel)
+      allow read: if request.auth != null && request.auth.token.admin == true;
+      // Optional: Allow delete only by the user?
+      // allow delete: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // --- Activity Logs Rules (Nested Structure) ---
+    match /activityLogs/{userId}/activities/{activityId} {
+      // Allow authenticated users to create logs in their own subcollection
+      allow create: if request.auth != null && userId == request.auth.uid;
+
+      // Allow admins to read logs from any user's subcollection
+      allow read: if request.auth != null && request.auth.token.admin == true;
+
+      // Generally, disallow updates and deletes by clients for logs
+      allow update, delete: if false;
+    }
+
+    // --- Existing Chat Rules (Keep these as they are) ---
+
+    match /chats/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    match /chats/{userId}/profiles/{profileId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+
+      // Allow users to read/write their own profile's reading log
+      match /readingLog/{logId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+        // Optional: Allow delete?
+        // allow delete: if request.auth != null && request.auth.uid == userId;
+      }
+
+      // Allow users to manage their own profile's global recommendations document
+      match /globalRecommendations/{recommendationDocId} {
+        // Allow read/write/delete by the profile owner
+        allow read, write, delete: if request.auth != null && request.auth.uid == userId;
+      }
+
+      // Rule for genre-specific pagination context
+      match /genrePaginationContext/{genreContextId} {
+        // Allow the profile owner to read (list, get) and delete documents for reset functionality.
+        allow read, delete: if request.auth != null && request.auth.uid == userId;
+        // Explicitly deny client-side create and update operations on this path.
+        allow create, update: if false;
+      }
+    }
+
+    match /chats/{userId}/profiles/{profileId}/chatSessions/{chatId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    match /chats/{userId}/profiles/{profileId}/chatSessions/{chatId}/messages/{message} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

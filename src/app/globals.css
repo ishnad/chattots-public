@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root color scheme */
+:root {
+  --background-color:#fefce8;
+  --text-color: #000;
+  --bg-gray-100: #f0f0f0;
+  --bg-white: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0a0a0a;
+    --text-color: #ededed;
+    --bg-gray-100: #1a1a1a;
+    --bg-white: #222;
+  }
+}
+
+/* Ensure HTML and body fill screen */
+html, body {
+  @apply h-full w-full m-0 p-0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Use full dynamic viewport height (especially on mobile) */
+body {
+  @apply flex flex-col overflow-hidden;
+  height: 100dvh;
+}
+
+/* Responsive font sizes */
+body {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Utility overrides using custom variables */
+.bg-gray-100 {
+  background-color: var(--bg-gray-100);
+}
+.bg-white {
+  background-color: var(--bg-white);
+}
+.text-black {
+  color: var(--text-color);
+}
+
+/* Optional: reusable utility for link-like buttons */
+.read-more {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.read-more:hover {
+  color: darkblue;
+}
+
+/* Layout components */
+.chat-container {
+  @apply flex-1 w-full flex flex-col p-4 overflow-auto;
+}
+
+.sidebar-container {
+  @apply h-full w-1/5 bg-white p-4;
+}
+
+.input-container {
+  @apply h-16 w-full flex items-center p-2 border-t border-gray-300;
+}
+
+.chat-box {
+  @apply flex-1 w-full flex flex-col overflow-y-auto;
+}
+
+.thumbnail {
+  max-width: 150px;
+  max-height: 200px;
+}
+/*Child-Friendly font -Steven*/
+@font-face {
+  font-family: "Comic Neue";
+  src: url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+}
+
+.font-comic {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+}
+
+/*Typing effect with bouncing dots*/
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+
+body {
+  font-size: 16px; /* Default font size */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.bg-gray-100 {
+  background-color: var(--bg-gray-100);
+}
+
+.bg-white {
+  background-color: var(--bg-white);
+}
+
+.text-black {
+  color: var(--text-color);
+}
+
+/* Define CSS variables for light mode */
+:root {
+  --background-color: #f0f0f0;
+  --text-color: #000;
+  --bg-gray-100: #f0f0f0;
+  --bg-white: #fff;
+}
+
+/* Define CSS variables for dark mode */
+.dark {
+  --background-color: #333;
+  --text-color: #fff;
+  --bg-gray-100: #444;
+  --bg-white: #555;
+}
+
+.read-more {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.read-more:hover {
+  color: darkblue;
+}
+
+/* Make sure the body or container element has a flexible width */
+body {
+  display: flex;
+  flex-direction: column; /* Ensures content stacks properly */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the body takes up the whole viewport */
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+}
+
+.chat-container {
+  height: 90%;
+  width: 90%; /* Makes sure it’s responsive */
+}
+
+.sidebar-container {
+  height: 90%;
+  width: 15%; /* Makes sure it’s responsive */
+}
+
+.input-container {
+  height: 5%;
+}
+
+/* Ensure chatbox takes up full width inside its container */
+.chat-box {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
