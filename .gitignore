@@ -143,3 +143,4 @@ node_modules/
 .aider*
 file-D5tNzKZ3MxPXXt5iGqtMR1.png
 check_openrouter_limits.js
+!.env.example
