@@ -74,8 +74,8 @@ flowchart LR
     end
 
     subgraph Orchestration
-        CHATAPI[/api/dialogflow]
-        ADMINAPI[/api/admin/*]
+        CHATAPI["/api/dialogflow"]
+        ADMINAPI["/api/admin/*"]
         DF[Dialogflow ES]
         LLM[OpenRouter]
     end
@@ -264,4 +264,3 @@ Notes:
 - Firestore security rules live in [`firestore.rules`](firestore.rules).
 - Seed genre data lives in [`src/data/bookGenres.json`](src/data/bookGenres.json) and [`src/data/contentGenres.json`](src/data/contentGenres.json).
 - The recommendation orchestration logic is concentrated in [`src/app/api/dialogflow/route.js`](src/app/api/dialogflow/route.js).
-
